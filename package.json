@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "lerna-staudy",
   "private": true,
   "devDependencies": {
     "lerna": "^3.16.4"
@@ -7,7 +7,8 @@
   "dependencies": {
     "eslint": "^6.3.0",
     "husky": "^3.0.5",
-    "lint-staged": "^9.2.5"
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2"
   },
   "lint-staged": {
     "packages/**/*.{js,jsx}": [
@@ -21,6 +22,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write \"src/**/*.jsx\" \"src/**/*.js\"",
     "lint": "eslint src/**/*.js",
-    "publish-l": "lerna publish --conventional-commits --independent"
+    "publish-l": "lerna publish"
   }
 }
