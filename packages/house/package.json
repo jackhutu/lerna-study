@@ -1,6 +1,6 @@
 {
   "name": "house",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "window": "^0.0.2"
+    "window": "^0.0.3"
   },
   "author": "",
   "license": "ISC",
