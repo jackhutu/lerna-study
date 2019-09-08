@@ -1,6 +1,6 @@
 {
   "name": "tree",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "tree",
   "keywords": [
     "tree"
@@ -28,5 +28,6 @@
   },
   "bugs": {
     "url": "https://github.com/jackhutu/lerna-study/issues"
-  }
+  },
+  "gitHead": "41098fe5d8cc5c42fd99f94f88c4ed77ff841e9e"
 }
