@@ -4,6 +4,5 @@ module.exports = bighouse;
 
 function bighouse() {
   // TODO
-  
-  return "bighouse"
+  return "bighouse" 
 }
