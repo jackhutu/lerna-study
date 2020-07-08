@@ -1,3 +1,17 @@
 {
-  "extends": ["plugin:prettier/recommended"]
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:react/recommended","plugin:prettier/recommended"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
