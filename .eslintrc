@@ -1,5 +1,3 @@
 {
-  "rules": {
-    "semi": ["error", "always"]
-  }
+  "extends": ["plugin:prettier/recommended"]
 }
