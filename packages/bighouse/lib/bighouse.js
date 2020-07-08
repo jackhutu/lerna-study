@@ -3,5 +3,6 @@
 module.exports = bighouse;
 
 function bighouse() {
-    // TODO
+  // TODO
+  return 'bighouse';
 }

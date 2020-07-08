@@ -1,3 +1,4 @@
 node_modules
 *.rej
 *.test.js
+.DS_Store
