@@ -29,7 +29,7 @@
     "typescript": "^3.9.6"
   },
   "lint-staged": {
-    "packages/**/*.{js,jsx}": [
+    "packages/**/*.{js,jsx,ts}": [
       "prettier --write",
       "git add"
     ]

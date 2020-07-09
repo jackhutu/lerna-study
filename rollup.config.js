@@ -18,7 +18,7 @@ const tasks = outputTypes.map((output) => ({
   input: './src/index.js', //(组件主入口，相对路径)
   external,
   output,
-  name: 'my-library', 
+  name: 'my-library',
   plugins: [
     resolve(),
     filesize(),
