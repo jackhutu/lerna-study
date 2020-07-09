@@ -24,7 +24,8 @@
     "url": "git+https://github.com/jackhutu/lerna-study.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rollup -c ../../rollup.config.js"
   },
   "bugs": {
     "url": "https://github.com/jackhutu/lerna-study/issues"

@@ -3,13 +3,14 @@ import resolve from 'rollup-plugin-node-resolve';
 import filesize from 'rollup-plugin-filesize';
 import sass from 'rollup-plugin-sass';
 import svg from 'rollup-plugin-react-svg';
+import clear from 'rollup-plugin-clear';
 import { writeFileSync } from 'fs';
 import path from 'path';
 
 const external = ['react', 'prop-types'];
 const outputTypes = [
   {
-    file: './dist/es/index.js',
+    file: './dist/index.es.js',
     format: 'es'
   } //(ES Modules)
 ];
@@ -20,6 +21,9 @@ const tasks = outputTypes.map((output) => ({
   output,
   name: 'my-library',
   plugins: [
+    clear({
+      targets: ['./dist']
+    }),
     resolve(),
     filesize(),
     sass({
@@ -35,8 +39,7 @@ const tasks = outputTypes.map((output) => ({
       }
     }),
     babel({
-      exclude: 'node_modules/**',
-      plugins: ['external-helpers'] //(你需要安装babel插件来解析ES6)
+      exclude: 'node_modules/**'
     }),
     svg()
   ]
