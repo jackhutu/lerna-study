@@ -1,5 +1,16 @@
 {
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "globalReturn": true,
+      "impliedStrict": true,
+      "experimentalObjectRestSpread":true,
+      "jsx": true,
+      "legacyDecorators": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
   "extends": ["plugin:react/recommended","plugin:prettier/recommended"],
   "env": {
     "browser": true,

@@ -10,9 +10,17 @@
   },
   "dependencies": {
     "@typescript-eslint/parser": "^3.6.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^6.3.0",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.6",
+    "father-build": "^1.18.1",
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
@@ -35,6 +43,6 @@
     "lint": "eslint src/**/*.js",
     "publish-l": "lerna publish",
     "build": "PACKAGE=house father-build",
-    "watch": "lerna exec --parallel -- rollup -f cjs -i src/index.js -o dist/index.js -w"
+    "build:rollup": "lerna exec --parallel -- rollup -f esm -i src/index.js -o dist/index.js"
   }
 }
