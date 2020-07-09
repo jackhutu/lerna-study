@@ -27,7 +27,7 @@ const tasks = outputTypes.map(output => ({
       output: styles => writeFileSync(path.resolve('./dist', 'index.css'), styles),
       options: {
         importer(url) {
-          return url.startsWith('~') && ({ file: `${process.cwd()}/node_modules/${url.slice(1)}` })
+          return url.startsWith('~');
         }
       }
     }),
