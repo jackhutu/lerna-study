@@ -23,7 +23,7 @@
     "father-build": "^1.18.1",
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
-    "prettier": "^1.18.2",
+    "prettier": "^2.0.5",
     "rollup": "^2.21.0",
     "rollup-plugin-babel": "^4.4.0",
     "typescript": "^3.9.6"
