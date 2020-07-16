@@ -1,2 +1,3 @@
-console.log('window');
-console.log('update');
+export default function () {
+  return 'window';
+}
