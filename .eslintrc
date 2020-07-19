@@ -1,5 +1,16 @@
 {
   "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "globalReturn": true,
@@ -11,17 +22,23 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["plugin:react/recommended","plugin:prettier/recommended"],
   "env": {
     "browser": true,
-    "jest": true
+    "jest": true,
+    "es6": true
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "react-hooks",
-    "prettier"
-  ],
+  "settings": {
+    "react": {
+      "version": "detected"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {},
+      "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    }
+  },
   "rules": {
     "prettier/prettier": "error"
   }

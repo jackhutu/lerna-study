@@ -1,11 +1,11 @@
-# `@lerna-staudy/bighouse`
+# `@study/bighouse`
 
 > TODO: description
 
 ## Usage
 
 ```
-const bighouse = require('@lerna-staudy/bighouse');
+const bighouse = require('@study/bighouse');
 
 // TODO: DEMONSTRATE API
 ```

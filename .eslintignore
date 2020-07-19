@@ -1,11 +1,14 @@
-**/bak/**
-**/bin/**
-**/config/**
-**/dist/**
-**/doc/**
+*.min.js
 **/node_modules/**
-**/public/**
-**/report/**
-**/server/**
-**/webpack.config*.js
-*.test.js
+
+# types and commitlint
+commitlint.config.js
+react-app-env.d.ts
+
+# ignore built packages
+packages/**/dist/**
+packages/**/build/**
+
+# fixtures
+**/__testfixtures__/**
+**/__tests__/fixtures/**
