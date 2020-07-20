@@ -1,4 +1,11 @@
-node_modules
-*.rej
-*.test.js
 .DS_Store
+node_modules
+*.log
+dist
+packages/**/package-lock.json
+.vscode
+.idea
+_book
+.cache
+.eslintcache
+coverage

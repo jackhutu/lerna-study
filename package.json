@@ -1,29 +1,99 @@
 {
-  "name": "lerna-staudy",
+  "name": "public-project-best-practices",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.16.4"
+  "description": "基于Lerna管理Monorepo项目的最佳实践",
+  "main": "index.js",
+  "repository": "https://github.com/tutuxxx/public-project-best-practices.git",
+  "homepage": "https://github.com/tutuxxx/public-project-best-practices#readme",
+  "author": "tutuxxx <yushijiechn@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --fix ./packages",
+    "dev:docs": "vuepress dev docs",
+    "build:docs": "vuepress build docs",
+    "publish:docs": "bash docs/deploy.sh",
+    "commit": "git-cz",
+    "clean": "rimraf package-lock.json packages/*/node_modules packages/*/package-lock.json",
+    "bootstrap:lerna": "lerna bootstrap",
+    "bootstrap": "npm-run-all clean bootstrap:lerna",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m 'docs: 更新changelog' && git push",
+    "release": "npm-run-all build publish:lerna",
+    "publish:lerna": "lerna publish --exact",
+    "publish:alpha": "lerna publish --preid=alpha --exact",
+    "publish:next": "lerna publish --preid=beta --dist-tag=next --exact",
+    "build": "lerna run build",
+    "build:runtime": "lerna exec --scope @iworld/hello-runtime-core -- rollup -c rollup.config.js --environment NODE_ENV:production",
+    "dev:runtime": "lerna exec --scope @iworld/hello-runtime-core -- rollup -wc rollup.config.js --environment NODE_ENV:development",
+    "build:cli": "lerna exec --scope @iworld/hello-cli -- tsc",
+    "dev:cli": "lerna exec --scope @iworld/hello-cli -- tsc -w",
+    "test": "jest --coverage",
+    "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
-  "dependencies": {
-    "eslint": "^6.3.0",
-    "husky": "^3.0.5",
-    "lint-staged": "^9.2.5",
-    "prettier": "^1.18.2"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "lint-staged": {
-    "packages/**/*.{js,jsx}": [
-      "prettier --write",
-      "eslint",
+    "*.{js,ts}": [
+      "npm run lint",
       "git add"
     ]
   },
-  "scripts": {
-    "bootstrap":"lerna bootstrap",
-    "clean": "lerna clean",
-    "precommit": "lint-staged",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --write \"src/**/*.jsx\" \"src/**/*.js\"",
-    "lint": "eslint src/**/*.js",
-    "publish-l": "lerna publish"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@iworld/hello-shared-utils$": "<rootDir>/packages/hello-shared-utils/src/index.ts"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-polyfill": "^6.26.0",
+    "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.28",
+    "coveralls": "^3.0.9",
+    "cz-lerna-changelog": "^2.0.2",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "lerna": "^3.19.0",
+    "lint-staged": "^9.4.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.27.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "rollup-plugin-uglify": "^6.0.3",
+    "typescript": "^3.7.2",
+    "vuepress": "^1.2.0"
   }
 }
