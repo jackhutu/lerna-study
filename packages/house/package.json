@@ -8,7 +8,7 @@
   "author": "<xuhui.hu@weimob.com>",
   "homepage": "http://house",
   "license": "ISC",
-  "main": "dist/index.js",
+  "main": "index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "directories": {
