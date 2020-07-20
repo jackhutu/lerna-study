@@ -36,3 +36,18 @@
 ✅ LOGO：[brandmark](https://brandmark.io/)、[looka](https://looka.com/)
 
 ✅ 文档：[vuepress](https://vuepress.vuejs.org/)
+<<<<<<< HEAD
+=======
+
+## 更新日志
+
+[CHANGELOG.md](./CHANGELOG.md)
+
+## 贡献
+
+[贡献指南](./CONTRIBUTING.md)
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+>>>>>>> fe7f25a... feat: 初始化
