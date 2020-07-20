@@ -1,6 +1,6 @@
 import { capitalize, isArray } from '../src/index'
 
-describe('@iworld/hello-shared-utils', () => {
+describe('@study/hello-shared-utils', () => {
   it('测试capitalize方法', () => {
     expect(capitalize('hello')).toBe('Hello')
   })

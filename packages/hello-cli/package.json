@@ -1,7 +1,7 @@
 {
-  "name": "@iworld/hello-cli",
+  "name": "@study/hello-cli",
   "version": "0.1.4",
-  "description": "@iworld/hello-cli",
+  "description": "@study/hello-cli",
   "keywords": [
     "cli"
   ],

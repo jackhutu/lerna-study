@@ -1,6 +1,6 @@
 import { say } from '../src/index'
 
-describe('@iworld/hello-cli', () => {
+describe('@study/hello-cli', () => {
   it('console.log the text "World"', () => {
     console.log = jest.fn();
     say('World');

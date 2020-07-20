@@ -1,11 +1,7 @@
 {
-  "name": "public-project-best-practices",
+  "name": "lerna-staudy",
   "private": true,
-  "description": "基于Lerna管理Monorepo项目的最佳实践",
-  "main": "index.js",
-  "repository": "https://github.com/tutuxxx/public-project-best-practices.git",
-  "homepage": "https://github.com/tutuxxx/public-project-best-practices#readme",
-  "author": "tutuxxx <yushijiechn@qq.com>",
+  "description": "lerna-staudy",
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js,.ts --fix ./packages",
@@ -22,10 +18,10 @@
     "publish:alpha": "lerna publish --preid=alpha --exact",
     "publish:next": "lerna publish --preid=beta --dist-tag=next --exact",
     "build": "lerna run build",
-    "build:runtime": "lerna exec --scope @iworld/hello-runtime-core -- rollup -c rollup.config.js --environment NODE_ENV:production",
-    "dev:runtime": "lerna exec --scope @iworld/hello-runtime-core -- rollup -wc rollup.config.js --environment NODE_ENV:development",
-    "build:cli": "lerna exec --scope @iworld/hello-cli -- tsc",
-    "dev:cli": "lerna exec --scope @iworld/hello-cli -- tsc -w",
+    "build:runtime": "lerna exec --scope @study/hello-runtime-core -- rollup -c rollup.config.js --environment NODE_ENV:production",
+    "dev:runtime": "lerna exec --scope @study/hello-runtime-core -- rollup -wc rollup.config.js --environment NODE_ENV:development",
+    "build:cli": "lerna exec --scope @study/hello-cli -- tsc",
+    "dev:cli": "lerna exec --scope @study/hello-cli -- tsc -w",
     "test": "jest --coverage",
     "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
@@ -48,7 +44,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^@iworld/hello-shared-utils$": "<rootDir>/packages/hello-shared-utils/src/index.ts"
+      "^@study/hello-shared-utils$": "<rootDir>/packages/hello-shared-utils/src/index.ts"
     }
   },
   "devDependencies": {

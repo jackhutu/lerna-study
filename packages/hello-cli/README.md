@@ -1,4 +1,4 @@
-# `@iworld/hello-cli`
+# `@study/hello-cli`
 
 > 一个简单的cli
 

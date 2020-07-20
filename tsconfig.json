@@ -18,8 +18,8 @@
     "lib": ["esnext"],
     "rootDir": ".",
     "paths": {
-      "@iworld/hello-shared-utils": ["packages/hello-shared-utils/src"],
-      "@iworld/hello-runtime-core": ["packages/hello-runtime-core/src"]
+      "@study/hello-shared-utils": ["packages/hello-shared-utils/src"],
+      "@study/hello-runtime-core": ["packages/hello-runtime-core/src"]
     }
   },
   "include": [

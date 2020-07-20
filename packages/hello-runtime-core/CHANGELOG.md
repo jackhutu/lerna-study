@@ -27,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.1.1](https://github.com/tutuxxx/public-project-best-practices/compare/v0.1.0...v0.1.1) (2019-12-08)
 
-**Note:** Version bump only for package @iworld/hello-runtime-core
+**Note:** Version bump only for package @study/hello-runtime-core
 
 
 

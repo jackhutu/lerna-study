@@ -1,3 +1,3 @@
-# `@iworld/hello-runtime-core`
+# `@study/hello-runtime-core`
 
 > hello的运行时核心

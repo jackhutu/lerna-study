@@ -1,4 +1,4 @@
-import { capitalize } from '@iworld/hello-shared-utils';
+import { capitalize } from '@study/hello-shared-utils';
 
 export default class Hello {
   msg: string;

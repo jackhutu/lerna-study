@@ -1,16 +1,3 @@
-# public-project-best-practices
-
-[![](https://img.shields.io/node/v/@iworld/hello-cli.svg)](https://www.npmjs.com/package/@iworld/hello-cli)
-[![](https://img.shields.io/npm/dt/@iworld/hello-runtime-core.svg)](https://www.npmjs.com/package/@iworld/hello-runtime-core)
-[![](https://img.shields.io/npm/l/@iworld/hello-runtime-core.svg)](https://www.npmjs.com/package/@iworld/hello-runtime-core)
-[![](https://coveralls.io/repos/github/tutuxxx/public-project-best-practices/badge.svg?branch=master)](https://coveralls.io/github/tutuxxx/public-project-best-practices)
-[![](https://img.shields.io/travis/tutuxxx/public-project-best-practices.svg)](https://www.npmjs.com/package/@iworld/hello-cli)
-
-> 良好的开端是成功的一半
-
-## 简介
-
-**public-project-best-practices** 是一套基于 [Lerna](https://lerna.js.org/) 管理 [Monorepo](https://en.wikipedia.org/wiki/Monorepo) 项目的最佳实践，项目整合了一系列第三方开发辅助工具，为您提供一个开箱即用的工作流。
 
 ## 特性
 
@@ -49,15 +36,3 @@
 ✅ LOGO：[brandmark](https://brandmark.io/)、[looka](https://looka.com/)
 
 ✅ 文档：[vuepress](https://vuepress.vuejs.org/)
-
-## 更新日志
-
-[CHANGELOG.md](./CHANGELOG.md)
-
-## 贡献
-
-[贡献指南](./CONTRIBUTING.md)
-
-## License
-
-[MIT](https://opensource.org/licenses/MIT)
