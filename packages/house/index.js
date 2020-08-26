@@ -1,1 +1,2 @@
-console.log('house');
+module.exports = require('./dist/index.js').default;
+module.exports.default = module.exports;

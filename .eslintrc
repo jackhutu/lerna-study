@@ -1,5 +1,45 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "globalReturn": true,
+      "impliedStrict": true,
+      "experimentalObjectRestSpread":true,
+      "jsx": true,
+      "legacyDecorators": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detected"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {},
+      "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    }
+  },
   "rules": {
-    "semi": ["error", "always"]
+    "prettier/prettier": "error"
   }
 }

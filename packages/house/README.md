@@ -1,11 +1,11 @@
-# `tree`
+# `@study/house`
 
 > TODO: description
 
 ## Usage
 
 ```
-const tree = require('tree');
+const house = require('@study/house');
 
 // TODO: DEMONSTRATE API
 ```
