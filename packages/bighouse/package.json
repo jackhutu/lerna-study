@@ -1,6 +1,6 @@
 {
   "name": "@study/bighouse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bighouse",
   "keywords": [
     "bighouse"
@@ -40,6 +40,6 @@
     "@study/house": "^1.0.0"
   },
   "devDependencies": {
-    "@study/rollup": "^1.0.0"
+    "@study/rollup": "^1.0.1"
   }
 }

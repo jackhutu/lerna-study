@@ -1,6 +1,6 @@
 {
   "name": "@study/house",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "house",
   "keywords": [
     "house"
@@ -25,7 +25,6 @@
     "type": "git",
     "url": "git+https://github.com/jackhutu/lerna-study.git"
   },
-
   "scripts": {
     "clean": "rimraf dist",
     "watch": "yarn build:dev",
@@ -37,6 +36,6 @@
     "url": "https://github.com/jackhutu/lerna-study/issues"
   },
   "devDependencies": {
-    "@study/rollup": "^1.0.0"
+    "@study/rollup": "^1.0.1"
   }
 }
