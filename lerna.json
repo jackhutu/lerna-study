@@ -1,12 +1,4 @@
 {
-  "command": {
-    "publish": {
-      "allowBranch": "master",
-      "bump": "patch",
-      "conventialCommits": true,
-      "message": "chore: Publish"
-    }
-  },
   "changelog": {
     "repo": "jackhutu/lerna-study",
     "labels": {
@@ -20,7 +12,7 @@
   },
   "packages": [ "packages/*" ],
   "loglevel": "success",
-  "version": "independent",
+  "version": "1.1.0",
   "useWorkspaces": true,
   "registry": "https://registry.npmjs.org",
   "npmClient": "yarn",

@@ -1,12 +1,15 @@
 {
   "name": "@study/rollup",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "files": [
     "src",
     "package.json"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {},
   "dependencies": {
     "@rollup/plugin-alias": "^3.1.0",
