@@ -7,6 +7,17 @@
       "message": "chore(release): Publish"
     }
   },
+  "changelog": {
+    "repo": "jackhutu/lerna-study",
+    "labels": {
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "documentation": ":book: Documentation",
+      "dependencies": ":deciduous_tree: Dependency",
+      "chore": ":turtle: Chore"
+    },
+    "cacheDir": ".changelog"
+  },
   "packages": [ "packages/*" ],
   "loglevel": "success",
   "version": "independent",

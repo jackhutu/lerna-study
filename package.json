@@ -56,6 +56,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.1.0",
     "commitlint": "^8.3.5",
+    "conventional-changelog-cli": "^2.1.0",
     "coveralls": "^3.1.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
@@ -71,7 +72,7 @@
     "husky": "^4.2.3",
     "jest": "24.9.0",
     "lerna": "^3.20.2",
-    "lerna-changelog": "^0.8.3",
+    "lerna-changelog": "^1.0.1",
     "lint-staged": "^10.2.2",
     "npm-run-all": "4.1.5",
     "prettier": "^1.19.1",
@@ -91,6 +92,7 @@
     "build": "lerna run --stream build",
     "rebuild": "run-s clean bootstrap build",
     "clean": "lerna run clean && lerna clean -y",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m 'docs: 更新changelog' && git push",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
@@ -109,5 +111,9 @@
     "lint:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .ts,.tsx .",
     "lint:other": "yarn prettier --check",
     "prettier": "prettier \"**/*.{md,css,scss,yaml,yml}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackhutu/lerna-study.git"
   }
 }
